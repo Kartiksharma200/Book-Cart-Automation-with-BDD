@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-12T14:41:02 IST" name="Default suite" finished-at="2025-03-12T14:41:15 IST" duration-ms="13090">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunner.TestRunnerForCucumber@4e50c791]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-03-12T14:41:02 IST" name="Default test" finished-at="2025-03-12T14:41:15 IST" duration-ms="13090">
+      <class name="com.testRunner.TestRunnerForCucumber">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.testRunner.TestRunnerForCucumber@4e50c791]" started-at="2025-03-12T14:41:02 IST" name="setUpClass" finished-at="2025-03-12T14:41:02 IST" duration-ms="352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@a7f0ab6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunner.TestRunnerForCucumber@4e50c791]" started-at="2025-03-12T14:41:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-12T14:41:08 IST" duration-ms="5811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Book"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Book and Add to Cart Successfull"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunner.TestRunnerForCucumber@4e50c791]" started-at="2025-03-12T14:41:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-12T14:41:08 IST" duration-ms="33" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add to Cart book"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Book and Add to Cart Successfull"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at com.stepDefinition.addToCartStep.click_on_the_add_to_cart_icon(addToCartStep.java:61)
+at ✽.click on the add to cart icon(file:///C:/Users/10000/eclipse-workspace/BookCart-Automation-ByCucumber/src/test/resources/AllFeaturesfile/AddToCart.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunner.TestRunnerForCucumber@4e50c791]" started-at="2025-03-12T14:41:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-12T14:41:15 IST" duration-ms="6808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify login with valid Details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testRunner.TestRunnerForCucumber@4e50c791]" started-at="2025-03-12T14:41:15 IST" name="tearDownClass" finished-at="2025-03-12T14:41:15 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testRunner.TestRunnerForCucumber -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
